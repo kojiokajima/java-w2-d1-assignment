@@ -19,10 +19,10 @@ public class Payroll {
         double stateTax = input.nextDouble();
 
         double grossPay = hours * payRate;
-        double federalWithholding = grossPay * federalTax;
-        double statelWithholding = grossPay * stateTax;
-        // int federalPercentage = federalTax * 100;
-        // int statePercentage = federalTax * 100;
+        // double federalWithholding = grossPay * federalTax;
+        double federalWithholding = Math.round(grossPay * federalTax * 100.0) / 100.0;
+        // double statelWithholding = grossPay * stateTax;
+        double statelWithholding = Math.round(grossPay * stateTax * 100.0) / 100.0;
         double netPay = grossPay - federalWithholding - statelWithholding;
 
 
