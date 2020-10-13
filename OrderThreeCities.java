@@ -50,7 +50,5 @@ public class OrderThreeCities {
 
         System.out.println("The three cities in alphabetical order are " + first + " " + second + " " + third);
 
-        // System.out.println("Aab".compareTo("Foo"));
-
     }
 }
