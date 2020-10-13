@@ -4,8 +4,6 @@ import java.lang.Math;
 public class VowelOrConsonant {
 
     public static void main(String[] args) {
-        // char example = 'a';
-        // System.out.println(Character.isLetter(example));
 
         Scanner input = new Scanner(System.in);
 
@@ -32,6 +30,5 @@ public class VowelOrConsonant {
         } else {
             System.out.println(userInput + " is an invalid input");
         }
-        
     }
 }
