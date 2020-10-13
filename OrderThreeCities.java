@@ -14,36 +14,36 @@ public class OrderThreeCities {
         String secondCity = input.nextLine();
         System.out.print("Enter the third city: ");
         String thirdCity = input.nextLine();
-        
+
         String lowFirstCity = firstCity.toLowerCase();
         String lowSecondCity = secondCity.toLowerCase();
         String lowThirdCity = thirdCity.toLowerCase();
 
-        if(lowFirstCity.compareTo(lowSecondCity) <= 0 && lowFirstCity.compareTo(lowThirdCity) <= 0) {
+        if (lowFirstCity.compareTo(lowSecondCity) <= 0 && lowFirstCity.compareTo(lowThirdCity) <= 0) {
             first = firstCity;
-            if(lowSecondCity.compareTo(lowThirdCity) <= 0) {
-                second = secondCity; 
+            if (lowSecondCity.compareTo(lowThirdCity) <= 0) {
+                second = secondCity;
                 third = thirdCity;
             } else {
-                second = thirdCity; 
+                second = thirdCity;
                 third = secondCity;
             }
-        } else if(lowSecondCity.compareTo(lowFirstCity) <= 0 && lowSecondCity.compareTo(lowThirdCity) <= 0) {
+        } else if (lowSecondCity.compareTo(lowFirstCity) <= 0 && lowSecondCity.compareTo(lowThirdCity) <= 0) {
             first = secondCity;
-            if(lowFirstCity.compareTo(lowThirdCity) <= 0) {
-                second = firstCity; 
+            if (lowFirstCity.compareTo(lowThirdCity) <= 0) {
+                second = firstCity;
                 third = thirdCity;
             } else {
-                second = thirdCity; 
+                second = thirdCity;
                 third = firstCity;
             }
-        } else if(lowThirdCity.compareTo(lowFirstCity) <= 0 && lowThirdCity.compareTo(lowSecondCity) <= 0) {
+        } else if (lowThirdCity.compareTo(lowFirstCity) <= 0 && lowThirdCity.compareTo(lowSecondCity) <= 0) {
             first = thirdCity;
-            if(lowFirstCity.compareTo(lowSecondCity) <= 0) {
-                second = firstCity; 
+            if (lowFirstCity.compareTo(lowSecondCity) <= 0) {
+                second = firstCity;
                 third = secondCity;
             } else {
-                second = secondCity; 
+                second = secondCity;
                 third = firstCity;
             }
         }

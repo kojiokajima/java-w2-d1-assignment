@@ -19,12 +19,9 @@ public class Payroll {
         double stateTax = input.nextDouble();
 
         double grossPay = hours * payRate;
-        // double federalWithholding = grossPay * federalTax;
         double federalWithholding = Math.round(grossPay * federalTax * 100.0) / 100.0;
-        // double statelWithholding = grossPay * stateTax;
         double statelWithholding = Math.round(grossPay * stateTax * 100.0) / 100.0;
         double netPay = grossPay - federalWithholding - statelWithholding;
-
 
         System.out.println("Employee Name: " + name);
         System.out.println("Hours Worked: " + hours);
@@ -34,9 +31,6 @@ public class Payroll {
         System.out.println("  Federal Withholding (" + federalTax * 100 + "%): $" + federalWithholding);
         System.out.println("  State Withholding (" + stateTax * 100 + "%): $" + statelWithholding);
         System.out.println("Net Pay: $" + netPay);
-
-
-        
 
     }
 }

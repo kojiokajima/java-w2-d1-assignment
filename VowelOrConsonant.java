@@ -10,8 +10,8 @@ public class VowelOrConsonant {
         System.out.print("Enter a letter: ");
         char userInput = input.next().charAt(0);
 
-        if(Character.isLetter(userInput)) {
-            switch(userInput) {
+        if (Character.isLetter(userInput)) {
+            switch (userInput) {
                 case 'A':
                 case 'a':
                 case 'E':
@@ -25,7 +25,7 @@ public class VowelOrConsonant {
                     System.out.println(userInput + " is a vowel");
                     break;
                 default:
-                System.out.println(userInput + " is a consonant");
+                    System.out.println(userInput + " is a consonant");
             }
         } else {
             System.out.println(userInput + " is an invalid input");
